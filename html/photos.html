@@ -1,90 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .menu {
-            background-color: rgb(85, 154, 245);
-            list-style-type:none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .menu li {
-            display: inline-block;
-            font-size: 16px;
-            padding: 8px;
-        }
-        .menu li a {
-            display: block;
-            color: #000;
-            padding: 4px;
-            text-decoration: none;
-        }
-        .menu li a:hover {
-            //background-color: rgb(7, 7, 7);
-            color: white;
-        }
-        main, header, aside{
-            text-align: center;
-        }
-        .text{
-            margin: 50px;
-            padding: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
+
 <body>
-    <header>
-        <h1>Νίκος Καζαντζάκης (1883-1957) </h1>
+    <div class="grid">
+        <header>
+            <a href="/html/biography.html" > Νίκος Καζαντζάκης (1883-1957)</a>   
+           </header>
         <nav>
             <ul class="menu">
                 <li><a href="/html/biography.html" href="#biography"> Βιογραφία</a></li>
                 <li><a href="/html/photos.html" href="#photos"> Φωτογραφίες</a></li>
-                <li><a href="/html/works.html" href="#works"> Έργα</a></li>
+                <li><a href="/html/projects.html" href="#projects"> Έργα</a></li>
                 <li><a href="/html/links.html" href="#links"> Σύνδεσμοι</a></li>
                 <li><a href="/html/manage.html" href="#manage"> Διαχείριση</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        
-        <h2>Φωτογραφίες</h2>
-        <div>
-            <table>
-                <tr><td><img src="/images/Nikos.Kazantakis.jpg" alt="Kazantakis" width="260" height="195"></td></tr>
-                <tr><td><img src="/images/Nikos.Kazantakis3.jpg" alt="Kazantakis3" width="190" height="266"></td></tr>
-                <tr><td><img src="/images/Nikos_Kazantzakis_Statue.jpg" alt="Kazantakis_Statue" width="220" height="317"></td></tr>
-                <tr><td><img src="/images/Nikos.Kazantakis2.jpg" alt="Kazantakis2" width="620" height="455"></td></tr>
-                <tr><td><img src="/images/Nikos.Kazantakis4.png" alt="Kazantakis4" width="800" height="419"></td></tr> 
-            </table>
-        </div>
+        <main>
+    
+            <h2>Φωτογραφίες</h2>
+            <!-- <div>
+                <table>
+                    <tr>
+                        <td><img src="/images/Nikos.Kazantakis.jpg" alt="Kazantakis" width="260" height="195"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/Nikos.Kazantakis3.jpg" alt="Kazantakis3" width="190" height="266"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/Nikos_Kazantzakis_Statue.jpg" alt="Kazantakis_Statue" width="220"
+                                height="317"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/Nikos.Kazantakis2.jpg" alt="Kazantakis2" width="620" height="455"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/Nikos.Kazantakis4.png" alt="Kazantakis4" width="800" height="419"></td>
+                    </tr>
+                </table>
+            </div> -->
+            <div id="kazantzakis">
+                <img src="/images/Nikos.Kazantakis2.jpg" alt="kazantzakis">
+            </div>
+            <div id="child">
+                <img src="/images/child.jpg" alt="child">
+            </div>
+            <div id="interview">
+                <img src="/images/interview.jpg" alt="interview">
+            </div>
+            <div id="grafeio">
+                <img src="/images/grafeio.png" alt="grafeio" width="620" height="320">
+            </div>
+            <div id="geramata">
+                <img src="/images/geramata.jpg" alt="geramata">
+            </div>
+            <div id="tafos">
+                <img src="/images/tafos.jpg" alt="tafos" width="320" height="320">
+            </div>
+            <div id="statue">
+                <img src="/images/Statue.jpg" alt="Statue">
+            </div>
+            <div>
 
-    </main>
-
-
-    <aside>
-        <div>
-            <a href="/html/biography.html"> Βιογραφία</a>
-        </div>
-        <div>
-            <a href="/html/photos.html"> Φωτογραφίες</a>
-        </div>
-        <div>
-            <a href="/html/works.html"> Έργα</a>
-        </div>
-        <div>
-            <a href="/html/links.html"> Σύνδεσμοι</a>
-        </div>
-        <div>
-            <a href="/html/manage.html"> Διαχείριση</a>
-        </div>
-    </aside>
+            </div>
+    
+        </main>
+    
+    
+        <aside>
+            <!-- <div class="sidenav"> -->
+                
+                <button class="dropdown-btn">Νίκος Καζαντζάκης
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#kazantzakis">Νίκος Καζαντζάκης</a>
+                    <a href="#grafeio">Ο Καζαντζάκης στο γραφείο του</a>
+                    <a href="#interview"> Συνέντευξη στο BBC</a>
+                </div>
+    
+                <button class="dropdown-btn">Παιδική ηλικία
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#child">Ο Καζαντζάκης παιδί</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                
+                <button class="dropdown-btn">Σε μεγάλη ηλικία
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#geramata">Ο Καζαντζάκης σε μεγάλη ηλικία</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+                <button class="dropdown-btn">Ιστορία
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#tafos">Ο τάφος του Νίκου Καζαντζάκη στο Ηράκλειο Κρήτης</a>
+                    <a href="#statue">Το άγαλμα του Νίκου Καζαντζάκη</a>
+                </div>
+            <!-- </div> -->
+        </aside>
+        <footer>Footer</footer>
+    </div>
 </body>
+<script src="/js/main.js"></script>
 </html>
