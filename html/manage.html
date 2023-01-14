@@ -1,91 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .menu {
-            background-color: rgb(85, 154, 245);
-            list-style-type:none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .menu li {
-            display: inline-block;
-            font-size: 16px;
-            padding: 8px;
-        }
-        .menu li a {
-            display: block;
-            color: #000;
-            padding: 4px;
-            text-decoration: none;
-        }
-        .menu li a:hover {
-            //background-color: rgb(7, 7, 7);
-            color: white;
-        }
-        main, header, aside{
-            text-align: center;
-        }
-        .text{
-            margin: 50px;
-            padding: 0;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
+
 <body>
-    <header>
-        <h1>Νίκος Καζαντζάκης (1883-1957) </h1>
+    <div class="grid">
+        <header>
+            <a href="/html/main.html" > Νίκος Καζαντζάκης (1883-1957)</a> 
+        </header>
         <nav>
             <ul class="menu">
                 <li><a href="/html/biography.html" href="#biography"> Βιογραφία</a></li>
                 <li><a href="/html/photos.html" href="#photos"> Φωτογραφίες</a></li>
-                <li><a href="/html/works.html" href="#works"> Έργα</a></li>
+                <li><a href="/html/projects.html" href="#projects"> Έργα</a></li>
                 <li><a href="/html/links.html" href="#links"> Σύνδεσμοι</a></li>
                 <li><a href="/html/manage.html" href="#manage"> Διαχείριση</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        
-        <h2>Διαχείριση</h2>
-        <h3>Login</h3>
-        <form action="/sendData" method="POST">
-            <label for="txtUsername">Username:</label>
-            <input type="text" id="txtUsername" name="Username"  maxlength="20" placeholder="Enter you usernam.." autocomplete="on" required>
-            <br>
-            <label for="txtPassword">Password</label>
-            <input type="password" id="txtPassword" name="Password"  maxlength="20" placeholder="Enter our password.." autocomplete="on" pattern="[0-9a-zA-Z]{4,12]"  required>
-            <br>
-            <input type="submit" value="sumbit">
-            <input type="reset" value="reset">
-        </form>
+        <main>
+    
+            <h2>Διαχείριση</h2>
+            <h3 id="login">Login</h3>
+           
 
-    </main>
+            <form  action="/login" method="post">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Login">
+            </form> 
+            
+            <!-- <form class="form">
+                <input class="name" type="text" placeholder="Name" required>
+                <input class="email" type="email" placeholder="Email" required>
+                <input class="password" type="password" placeholder="Password" required>
+                <button class="submit-btn" type="submit">Submit</button>
+              </form>
+              <div class="alert-box">
+                <p class="alert"></p>
+              </div>
+               -->
 
-    <aside>
-        <div>
-            <a href="/html/biography.html"> Βιογραφία</a>
-        </div>
-        <div>
-            <a href="/html/photos.html"> Φωτογραφίες</a>
-        </div>
-        <div>
-            <a href="/html/works.html"> Έργα</a>
-        </div>
-        <div>
-            <a href="/html/links.html"> Σύνδεσμοι</a>
-        </div>
-        <div>
-            <a href="/html/manage.html"> Διαχείριση</a>
-        </div>
-    </aside>
+    
+        </main>
+    
+        <aside>
+            <div>
+                <a href="#login"> Σύνδεση</a>
+            </div>
+            <div>
+                <a href="/html/main.html" href="#logout"> Αποσύνδεση </a>
+            </div>
+            <div>
+                <a href="/html/projects.html"> Διαχείριση Έργων</a>
+            </div>
+            <div>
+                <a href="/html/links.html"> Διαχείριση συνδέσμων</a>
+            </div>
+        </aside>
+
+        <footer>Footer</footer>
+    </div>
 </body>
+<script src="/js/main.js"></script>
+<script src="/js/home.js"></script>
+<script src="/js/form.js"></script>
 </html>

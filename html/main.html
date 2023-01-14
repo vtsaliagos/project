@@ -1,88 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Νίκος Καζαντζάκης</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        .menu {
-            background-color: rgb(85, 154, 245);
-            list-style-type:none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .menu li {
-            display: inline-block;
-            font-size: 16px;
-            padding: 8px;
-        }
-        .menu li a {
-            display: block;
-            color: #000;
-            padding: 4px;
-            text-decoration: none;
-        }
-        .menu li a:hover {
-            //background-color: rgb(7, 7, 7);
-            color: white;
-        }
-        main, header, aside{
-            text-align: center;
-        }
-        .text{
-            margin: 50px;
-            padding: 0;
-        }
-    </style>
-        
+    <link rel="stylesheet" href="/styles/main.css">
+
 </head>
+
 <body>
-    <header>
-        <h2>Νίκος Καζαντζάκης (1883-1957) </h2>
+    <div class="grid">
+        <header >
+            <a href="/html/main.html"> Νίκος Καζαντζάκης (1883-1957)</a>   
+           </header>
         <nav>
             <ul class="menu">
-                <li><a href="/html/biography.html" href="#biography"> Βιογραφία</a></li>
-                <li><a href="/html/photos.html" href="#photos"> Φωτογραφίες</a></li>
-                <li><a href="/html/works.html" href="#works"> Έργα</a></li>
-                <li><a href="/html/links.html" href="#links"> Σύνδεσμοι</a></li>
-                <li><a href="/html/manage.html" href="#manage"> Διαχείριση</a></li>
+                <li><a href="/html/biography.html" data-content="biography" href="#biography"> Βιογραφία</a></li>
+                <li><a href="/html/photos.html" data-content="photos" href="#photos"> Φωτογραφίες</a></li>
+                <li><a href="/html/projects.html"  data-content="projects" href="#projects"> Έργα</a></li>
+                <li><a href="/html/links.html" data-content="links" href="#links"> Σύνδεσμοι</a></li>
+                <li><a href="/html/manage.html" data-content="manage" href="#manage"> Διαχείριση</a></li>
             </ul>
         </nav>
-    </header>
-    
-    <main>
-        <h1>Αρχική Σελίδα</h1>
-        <article>
-            
-        </article>
-    </main>
 
-    <aside>
-        
-        <div>
-            <a href="/html/biography.html"> Βιογραφία</a>
-        </div>
-        <div>
-            <a href="/html/photos.html"> Φωτογραφίες</a>
-        </div>
-        <div>
-            <a href="/html/works.html"> Έργα</a>
-        </div>
-        <div>
-            <a href="/html/links.html"> Σύνδεσμοι</a>
-        </div>
-        <div>
-            <a href="/html/manage.html"> Διαχείριση</a>
-        </div>
-    </aside>
+        <main>
+            <!-- Main content area -->
+            <div >
+              <!-- Default content -->
+              <p class="first">Welcome to the website! Please select an option from the main menu or side menu to view specific content.</p>
+            </div>
+          </main>
 
-    <footer>
-        <p>&copy; Οι Πίτες του Πίτου 2022</p>
-    </footer>
+        <aside >
+            <div>
+                <a href="/html/biography.html"> Βιογραφία</a>
+            </div>
+            <div>
+                <a href="/html/photos.html"> Φωτογραφίες</a>
+            </div>
+            <div>
+                <a href="/html/projects.html"> Έργα</a>
+            </div>
+            <div>
+                <a href="/html/links.html"> Σύνδεσμοι</a>
+            </div>
+            <div>
+                <a href="/html/manage.html"> Διαχείριση</a>
+            </div>
+        </aside>
+
+        <footer >
+            <p>&copy;Footer</p>
+        </footer>
+
+    </div>
 </body>
+<script src="/js/main.js"></script>
 </html>
