@@ -10,7 +10,7 @@ window.onload = () => {
     if(sessionStorage.name){
         location.href = '/';
     }
-};
+}; 
 
 const name = document.querySelector('.name') || null;
 const email = document.querySelector('.email');

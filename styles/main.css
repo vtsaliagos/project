@@ -251,7 +251,7 @@ aside a:hover, .dropdown-btn:hover {
   .form input {
     margin: 10px 0;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; 
     opacity: 0;
     transition: all 0.5s;
   }
