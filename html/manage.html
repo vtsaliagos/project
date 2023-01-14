@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Νίκος Καζαντζάκης</title>
     
     <link rel="stylesheet" href="/styles/main.css">
 </head>
@@ -27,34 +27,20 @@
         <main>
     
             <h2>Διαχείριση</h2>
-            <h3 id="login">Login</h3>
+            <h3 id="login">Sign in</h3>
            
 
-            <form  action="/login" method="post">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password"><br><br>
-                <input type="submit" value="Login">
+            <form  id="login-form" method="post">
+                <input type="text"  placeholder="Username..."><br>
+                <input type="password"  placeholder="Password..." ><br>
+                <button type="submit">Sign in</button><br>
             </form> 
-            
-            <!-- <form class="form"> 
-                <input class="name" type="text" placeholder="Name" required>
-                <input class="email" type="email" placeholder="Email" required>
-                <input class="password" type="password" placeholder="Password" required>
-                <button class="submit-btn" type="submit">Submit</button>
-              </form>
-              <div class="alert-box">
-                <p class="alert"></p>
-              </div>
-               -->
-
-    
+        
         </main>
     
         <aside>
             <div>
-                <a href="#login"> Σύνδεση</a>
+                <a href="#login-form"> Σύνδεση</a>
             </div>
             <div>
                 <a href="/html/main.html" href="#logout"> Αποσύνδεση </a>
@@ -67,11 +53,11 @@
             </div>
         </aside>
 
-        <footer>Footer</footer>
+        <footer >
+            <p>&copy;vtsaliagkos</p>
+        </footer>
     </div>
 </body>
 <script src="/js/main.js"></script>
-<script src="/js/home.js"></script>
-<script src="/js/form.js"></script>
 
 </html>

@@ -23,7 +23,6 @@ nav,
 aside,
 main,
 footer {
-    /* border: 1px solid black; */
     background-color: rgb(252, 252, 252);
 }
 
@@ -50,7 +49,17 @@ nav {
     margin: 0;
     padding: 10px;
 }
-
+footer {
+    grid-area: footer;
+    background-color: #1b264f;
+    text-align: center;
+    color: rgb(243, 247, 248);;
+   
+}
+footer p{
+    font-size: small;
+    color: rgb(243, 247, 248);;
+}
 nav li {
     display: inline-block;
     font-size: 16px;
@@ -60,7 +69,6 @@ nav li {
 nav li a {
     display: block;
     color: rgb(243, 247, 248);
-    /* background-color: white; */
     padding: 4px;
     text-decoration: none;
 }
@@ -137,7 +145,7 @@ input[type="password"] {
     border-radius: 5px;
 }
 
-input[type="submit"] {
+button { 
     padding: 5px 20px;
     font-size: 16px;
     background-color: #1b264f;
@@ -147,18 +155,12 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-
-
 main ul {
     padding: 50px;
 }
 
 ol {
     padding: 50px;
-}
-
-footer {
-    grid-area: footer;
 }
 
 .link {
@@ -230,7 +232,7 @@ aside a:hover, .dropdown-btn:hover {
     padding-left: 15px;
 }
 
-/* Optional: Style the caret down icon */
+
 .fa-caret-down {
     float: right;
     padding-right: 8px;
@@ -239,32 +241,5 @@ aside a:hover, .dropdown-btn:hover {
 .first{
     text-align: center;
     font-size: larger;
-    /* padding: 0; */
     margin: 20%;
 }
-/* .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form input {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px; 
-    opacity: 0;
-    transition: all 0.5s;
-  }
-  
-  .alert-box {
-    position: fixed;
-    top: null;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: red;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.5s;
-  }
-   */
